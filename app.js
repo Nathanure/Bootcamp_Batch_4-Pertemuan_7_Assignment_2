@@ -1,6 +1,8 @@
+// Imported modules
 const yargs = require('yargs');
 const cli = require('./local_modules/readlineCLI')
 
+// Command for Yargs
 yargs.command({
     command: 'add',
     describe: 'add new contact',
@@ -11,12 +13,12 @@ yargs.command({
             type: 'string',
         },
         email: {
-            describe: 'Contact email',
+            describe: 'Contact Email',
             demandOption: false,
             type: 'string',
         },
         mobile: {
-            describe: 'Contact mobile phone number',
+            describe: 'Contact Mobile Phone number',
             demandOption: true,
             type: 'string',
         }
